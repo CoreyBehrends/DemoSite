@@ -38,7 +38,7 @@
                 <configuration>
                     <webAppSourceDirectory>${webappDirectory}</webAppSourceDirectory>
                     <contextPath>/</contextPath>
-                    
+
                     <!-- !!!!! WARNING !!!!!! -->
                     <!-- This configuration of Jetty is not as secure as it causes Sessions to use a java.util.Random
                         vs. java.security.SecureRandom. This speeds up startup times locally but this should not be used
@@ -144,6 +144,11 @@
         <dependency>
             <groupId>commons-dbcp</groupId>
             <artifactId>commons-dbcp</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
         </dependency>
     </dependencies>
 </project>

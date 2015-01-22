@@ -13,15 +13,15 @@ IT IS NOT RECOMMENDED TO USE JETTY IN A PRODUCTION ENVIRONMENT.
         <Arg type="java.lang.String">mycompany-admin</Arg>
         <Arg type="boolean">true</Arg>
     </New>
-    
+
     <New id="webDS" class="org.eclipse.jetty.plus.jndi.Resource">
         <Arg>jdbc/web</Arg>
         <Arg>
             <New class="org.apache.commons.dbcp.BasicDataSource">
-                <Set name="driverClassName">org.hsqldb.jdbcDriver</Set>
-                <Set name="url">jdbc:hsqldb:hsql://localhost/broadleaf</Set>
-                <Set name="username">sa</Set>
-                <Set name="password"></Set>
+                <Set name="driverClassName">com.mysql.jdbc.Driver</Set>
+                <Set name="url">jdbc:mysql://mysqldev:3306/broadleaf?useUnicode=true&amp;characterEncoding=utf8</Set>
+                <Set name="username">cbehrends</Set>
+                <Set name="password">ProAthlete!@#</Set>
             </New>
         </Arg>
     </New>
@@ -30,10 +30,10 @@ IT IS NOT RECOMMENDED TO USE JETTY IN A PRODUCTION ENVIRONMENT.
         <Arg>jdbc/secure</Arg>
         <Arg>
             <New class="org.apache.commons.dbcp.BasicDataSource">
-                <Set name="driverClassName">org.hsqldb.jdbcDriver</Set>
-                <Set name="url">jdbc:hsqldb:hsql://localhost/broadleaf</Set>
-                <Set name="username">sa</Set>
-                <Set name="password"></Set>
+                <Set name="driverClassName">com.mysql.jdbc.Driver</Set>
+                <Set name="url">jdbc:mysql://mysqldev:3306/broadleaf?useUnicode=true&amp;characterEncoding=utf8</Set>
+                <Set name="username">cbehrends</Set>
+                <Set name="password">ProAthlete!@#</Set>
             </New>
         </Arg>
     </New>
@@ -42,10 +42,10 @@ IT IS NOT RECOMMENDED TO USE JETTY IN A PRODUCTION ENVIRONMENT.
         <Arg>jdbc/storage</Arg>
         <Arg>
             <New class="org.apache.commons.dbcp.BasicDataSource">
-                <Set name="driverClassName">org.hsqldb.jdbcDriver</Set>
-                <Set name="url">jdbc:hsqldb:hsql://localhost/broadleaf</Set>
-                <Set name="username">sa</Set>
-                <Set name="password"></Set>
+                <Set name="driverClassName">com.mysql.jdbc.Driver</Set>
+                <Set name="url">jdbc:mysql://mysqldev:3306/broadleaf?useUnicode=true&amp;characterEncoding=utf8</Set>
+                <Set name="username">cbehrends</Set>
+                <Set name="password">ProAthlete!@#</Set>
             </New>
         </Arg>
     </New>

@@ -16,7 +16,7 @@
         <!-- httpsPort and httpPort are used by embeded jetty server.-->
         <!-- Make sure the following httpsPort matches what's in the runtime-properties file,  -->
         <httpsPort>8444</httpsPort> 
-        <httpPort>8081</httpPort>
+        <httpPort>8080</httpPort>
     </properties>
     <build>
         <outputDirectory>${webappDirectory}/WEB-INF/classes</outputDirectory>
@@ -36,7 +36,7 @@
                 <configuration>
                     <webAppSourceDirectory>${webappDirectory}</webAppSourceDirectory>
                     <contextPath>/admin</contextPath>
-                    
+
                     <!-- !!!!! WARNING !!!!!! -->
                     <!-- This configuration of Jetty is not as secure as it causes Sessions to use a java.util.Random
                         vs. java.security.SecureRandom. This speeds up startup times locally but this should not be used
@@ -168,6 +168,11 @@
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>servlet-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
         </dependency>
     </dependencies>
 </project>
