@@ -17,7 +17,7 @@
     <!-- Broadleaf requires AOP -->
     <aop:config/>
 
-    <context:component-scan base-package="com.mycompany.admin" />
+    <!--<context:component-scan base-package="com.proathlete.admin" />-->
     
     <!-- Tell Spring to not try to map things in these directories to controllers -->
     <!-- Order must be set to supercede the handler configured by the mvc:annotation-driven annotation -->
