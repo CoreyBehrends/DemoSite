@@ -4,7 +4,7 @@
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 
-<head th:include="/layout/partials/head (pageTitle='Broadleaf Demo - Heat Clinic')"></head>
+<head th:include="/layout/partials/head (pageTitle='Pro Shop Store')"></head>
 
 <body>
     <div id="notification_bar"></div>
@@ -25,8 +25,8 @@
             <div id="home_feature" th:utext="${contentItem['htmlContent']}"></div>
         </a>
 
-        
-        <blc:content contentType="Homepage Featured Products Title" />    
+
+    <blc:content contentType="Homepage Featured Products Title" />
         <div th:if="${contentItem !=null and contentItem['messageText'] !=null}" class="title_bar" th:text="${contentItem['messageText']}"></div>
         
         <ul id="products" class="group">

@@ -259,7 +259,7 @@ header {
     color: #342020;
     font: 15px/28px 'Open Sans', Helvetica, sans-serif;
     font-weight: 600;
-    border-top: 15px solid #E40037;
+    border-top: 15px solid #0801e4;
 }
 
 #header_content {
@@ -329,9 +329,9 @@ header {
 }
 
     #header_content #logo h1, #header_content_checkout #logo h1 {
-        width: 299px;
-        height: 101px;
-        background: url('../img/the-heat-clinic-logo-internal.png') top left no-repeat;
+        width: 933px;
+        height: 157px;
+        background: url('../img/proshoplogo.jpeg') top left no-repeat;
         text-indent: -9999px;
         margin-top: -5px;
         display: block;
@@ -370,7 +370,7 @@ header {
 
     #header_content #cart_info {
         padding: 10px 20px;
-        background-color: #E40037;
+        background-color: #0801e4;
         color: white;
         text-align: right;
         float: right;
